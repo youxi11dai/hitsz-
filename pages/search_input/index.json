@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "search":"../../componments/search/search",
+    "tabs":"../../componments/tabs/tabs"
+  },
+  "navigationBarTitleText":"失物列表"
+}

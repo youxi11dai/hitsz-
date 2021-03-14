@@ -1,0 +1,33 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/search_input/index",
+    "pages/logs/logs",
+    "pages/wod/wod",
+    "pages/myimformation/index",
+    "pages/myshangchuan/index",
+    "pages/mylingqu/index",
+    "pages/comflict/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle":"black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "list":[{
+      "pagePath":"pages/index/index",
+      "text":"首页",
+      "iconPath": "/icon/shouye.png",
+      "selectedIconPath": "/icon/shouye_.png"
+    },
+    {
+      "pagePath":"pages/wod/wod",
+      "text":"我的",
+      "iconPath": "/icon/wode.png",
+      "selectedIconPath": "/icon/wode_.png"
+    }]
+  }
+}

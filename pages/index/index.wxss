@@ -1,0 +1,4 @@
+.title{
+  font-size:60rpx;
+  font-style:italic;
+}

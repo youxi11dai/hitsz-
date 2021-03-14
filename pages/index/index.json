@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "search":"../../componments/search/search"
+  },
+  "navigationBarTitleText":"HITSZ失物招领"
+}

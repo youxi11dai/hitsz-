@@ -1,0 +1,23 @@
+<view class="userinfofo">
+<button type="warn" bindgetuserinfo="getuser" open-type="getUserinfo" class="ss">
+登录
+</button>
+</view>
+
+<view class="userinfo">
+  <button class="sss" bindtap="onsc">
+    我的上传
+  </button>
+</view>
+
+<view class="userinfo" bindtap="onlingqu">
+  <button class="sss">
+    我的领取
+  </button>
+</view>
+
+<view class="userinfo" bindtap="oncomflict">
+  <button class="sss">
+    意见反馈
+  </button>
+</view>

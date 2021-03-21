@@ -1,0 +1,6 @@
+<view >
+  物品名称
+  <input class="inpution" placeholder="请输入物品的名称" bindinput="submit" />
+</view>
+
+<button bindtap="handleChooseImg">+</button>

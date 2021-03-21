@@ -1,0 +1,13 @@
+page{
+  background-color:#eeeeee;
+  line-height: 1.6;
+}
+
+view{
+  height: 100rpx;
+}
+
+.inpution{
+  background-color:white;
+  height: 100rpx;
+}

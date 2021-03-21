@@ -1,7 +1,18 @@
 <view class="userinfofo">
-<button type="warn" bindgetuserinfo="getuser" open-type="getUserinfo" class="ss">
-登录
-</button>
+  <button 
+      open-type="getUserInfo" 
+      bindgetuserinfo="onGetUserInfo"
+      class="userinfo-avatar"
+      style="background-image: url({{avatarUrl}})"
+      size="default"
+    >
+    </button>
+</view>
+
+<view class="userinfo">
+  <button class="sss" bindtap="information">
+    个人信息
+  </button>
 </view>
 
 <view class="userinfo">

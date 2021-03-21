@@ -1,2 +1,3 @@
-<!--pages/myshangchuan/index.wxml-->
-<text>pages/myshangchuan/index.wxml</text>
+<button class="anniu" type="warn" plain="ture" bindtap="goto">
+    <text class="add-btn">+</text>
+</button>

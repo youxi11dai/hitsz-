@@ -62,5 +62,11 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+
+  goto(){
+    wx.navigateTo({
+      url: '/pages/shangchuan/shangchuan'
+    })
   }
 })

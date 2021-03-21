@@ -1,24 +1,11 @@
-// pages/search_input/index.js
+// pages/comflictadd/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    tabs:[
-      {
-        id: 0,
-        value: "特殊物品",
-        isActive: true
-      },
-      {
-        id: 1,
-        value: "一般物品",
-        isActive: false
-      }
-    ],
-    goods:[],
-    turnon:1
+
   },
 
   /**
@@ -77,19 +64,9 @@ Page({
 
   },
 
-  handleinput(){
-    const {value}=e.detail;
-    if(!value.trim()){
-      return;
-    }
-  },
-
-  handleTabsItemChange(e){
-    const {index}=e.detail;
-    let {tabs}=this.data;
-    tabs.forEach((v,i)=>i===index?v.isActive=true:v.isActive=false);
-    this.setData({
-      tabs
+  reach(){
+    wx.navigateTo({
+      url: '../comflict/index',
     })
   }
 })

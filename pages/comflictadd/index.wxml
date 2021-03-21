@@ -1,0 +1,3 @@
+<button class="anniu" type="warn" plain="ture" bindtap="reach">
+    <text class="add-btn">+</text>
+</button>

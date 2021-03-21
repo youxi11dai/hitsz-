@@ -1,2 +1,12 @@
-<search></search>
+<view class="search_row">
+  <input placeholder="请输入失物的相关信息" class="search_row_input" bindinput="handleinput"> </input>
+  <button class="search_row_button">取消</button>
+</view>
 <tabs tabs="{{tabs}}" bindtabsItemChange="handleTabsItemChange" ></tabs>
+<view class="search_contents">
+  <view wx:if="{{type!=turnon}}">
+    <navigator class="search_item" wx:for="{{goods}}" wx:key="goods_id">
+      <image></image>
+    </navigator>
+  </view>
+</view>

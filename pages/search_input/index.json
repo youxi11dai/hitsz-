@@ -1,7 +1,8 @@
 {
   "usingComponents": {
-    "search":"../../componments/search/search",
-    "tabs":"../../componments/tabs/tabs"
+    "tabs":"../../componments/tabs/tabs",
+    "search":"../../componments/search/search"
   },
-  "navigationBarTitleText":"失物列表"
+  "navigationBarTitleText":"失物列表",
+  "navigationBarBackgroundColor":"#d81e06"
 }

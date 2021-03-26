@@ -16,7 +16,7 @@
           bindtap="deletephoto" 
           data-index="{{index}}">
           </photo>
-        </view>
+          </view>
  
         </view>
     </view>

@@ -1,14 +1,9 @@
-.anniu{
-	border-radius: 500rpx;
-  padding: 0;
-  width:100rpx;
+.tianjia{
+  left:250rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   height: 100rpx;
-  top:1005rpx;
-  left:280rpx;
-}
-
-.add-btn {
-  position: fixed;
-  bottom: 80rpx;
-  right: 80rpx;
+  width: 100rpx;
+  border-radius: 50%;
 }

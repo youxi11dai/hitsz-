@@ -41,6 +41,18 @@
           "pathName": "pages/comflict/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/myshangchuan/index",
+          "pathName": "pages/myshangchuan/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "具体的上传界面",
+          "pathName": "pages/shangchuan/shangchuan",
+          "query": "",
+          "scene": null
         }
       ]
     }

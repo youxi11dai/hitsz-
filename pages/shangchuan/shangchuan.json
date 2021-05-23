@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "photo":"../../componments/photo/photo"
+  },
+  "navigationBarTitleText": "上传失物信息"
+}

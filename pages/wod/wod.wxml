@@ -1,7 +1,19 @@
 <view class="userinfofo">
-<button type="warn" bindgetuserinfo="getuser" open-type="getUserinfo" class="ss">
-登录
-</button>
+  <view wx:if="{{userInfo.avatarUrl}}">
+    <view>
+      <image class="iccon" src="{{userInfo.avatarUrl}}"></image>
+      <view>{{userinfo.nickName}}</view>
+    </view>
+  </view>
+  <view wx:else>
+    <button bindtap="getUserProfile" class="buzhidao">登录</button>
+  </view>
+</view>
+
+<view class="userinfo">
+  <button class="sss" bindtap="information">
+    个人信息
+  </button>
 </view>
 
 <view class="userinfo">

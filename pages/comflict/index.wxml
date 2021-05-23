@@ -1,2 +1,30 @@
-<!--pages/comflict/index.wxml-->
-<text>pages/comflict/index.wxml</text>
+<Tabs tabs="{{tabs}}" bindtabsItemChange="handleTabsItemChange" >
+  <view class="fb_main">
+    <view class="fb_content">
+      <textarea value="{{textVal}}" bindinput="handleTextInput" placeholder="请描述一下您的问题"> </textarea>
+        <view class="fb_tool">
+          <button bindtap="handleChooseImg">+</button>
+          
+          
+          <view class="up_img_item"
+          wx:for="{{img}}"
+          wx:key="*this"
+          bindtap="deletephoto" 
+          data-index="{{index}}"
+          >
+          <photo src="{{item}}"
+          bindtap="deletephoto" 
+          data-index="{{index}}">
+          </photo>
+          </view>
+ 
+        </view>
+    </view>
+    <view class="form_btn_wrap">
+      <button bindtap="handlesubmit"  type="warn">
+        提交
+      </button>
+        
+    </view>
+  </view>
+</Tabs>

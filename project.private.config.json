@@ -1,0 +1,78 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "搜索功能的实现",
+          "pathName": "pages/search_input/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "个人中心",
+          "pathName": "pages/wod/wod",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "上传",
+          "pathName": "pages/myshangchuan/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/shangchuan/shangchuan",
+          "pathName": "pages/shangchuan/shangchuan",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/comflict/index",
+          "pathName": "pages/comflict/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/myshangchuan/index",
+          "pathName": "pages/myshangchuan/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "具体的上传界面",
+          "pathName": "pages/shangchuan/shangchuan",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/myimformation/index",
+          "pathName": "pages/myimformation/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/xiugai/xiugai",
+          "pathName": "pages/xiugai/xiugai",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/search_input/index",
+          "pathName": "pages/search_input/index",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,8 @@
+/* pages/mygood2/mygood2.wxss */
+.lingqu{
+  position:fixed;
+  bottom:0; 
+}
+.btt{
+  width: 750rpx;
+}

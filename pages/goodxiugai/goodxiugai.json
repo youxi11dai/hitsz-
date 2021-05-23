@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "photo":"../../componments/photo/photo"
+  },
+  "navigationBarTitleText": "物品信息修改"
+}

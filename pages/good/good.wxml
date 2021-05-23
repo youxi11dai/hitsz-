@@ -1,0 +1,20 @@
+<swiper indicator-dots="ture">
+  <swiper-item wx:for="{{gan.data}}" wx:key="tempFileURL">
+  <image wx:if="{{item.tempFileURL}}" src="{{item.tempFileURL}}" mode="aspectFit"></image>
+  </swiper-item>
+</swiper>
+<view>
+物品名称：{{name}}
+</view>
+<view>
+物品描述：{{description}}
+</view>
+<view>
+领取方式或联系方式：{{conversation}}
+</view>
+<view wx:if="{{lingqu=='false'}}" class="lingqu">
+  <button bindtap="lingqu" class="btt">领取</button>
+</view>
+<view class="lingqu" wx:else>
+  <button class="btt">已被领取</button>
+</view>

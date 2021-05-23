@@ -1,3 +1,3 @@
-<view>
-  <search></search>
-</view>
+<navigator url="/pages/search_input/index" open-type="navigate" class="search">
+搜索
+</navigator>

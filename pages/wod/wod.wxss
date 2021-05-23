@@ -43,7 +43,46 @@
   margin:0px
 }
 
-.ss{
-  height:60rpx;
+.userinfo-avatar {
+  width: 100rpx;
+  height: 100rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+  background-size: cover;
+  background-color: white;
+}
+
+.userinfo-avatar[size] {
+  width: 100rpx;
+}
+
+
+.userinfo-avatar:after {
+  border: none;
+}
+
+.userinfo-nickname {
+  font-size: 32rpx;
+  color: #007aff;
+  background-color: white;
+  background-size: cover;
+  text-align: left;
+  padding-left: 0;
+  margin-left: 10px;
+}
+.iccon{
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+  margin-left:250rpx;
+}
+
+.buzhidao{
+  margin-left:250rpx ;
+  width: 150rpx;
   display: flex;
+}
+
+.buzhidao2{
+  margin-left: 250rpx;
 }

@@ -1,0 +1,8 @@
+/* pages/good/good.wxss */
+.lingqu{
+  position:fixed;
+  bottom:0; 
+}
+.btt{
+  width: 750rpx;
+}

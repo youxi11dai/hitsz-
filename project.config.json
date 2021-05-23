@@ -1,5 +1,6 @@
 {
   "description": "项目配置文件",
+  "cloudfunctionRoot": "cloudbase/",
   "packOptions": {
     "ignore": []
   },
@@ -30,7 +31,6 @@
       "outputPath": ""
     },
     "enableEngineNative": false,
-    "bundle": false,
     "useIsolateContext": true,
     "useCompilerModule": true,
     "userConfirmedUseCompilerModuleSwitch": false,

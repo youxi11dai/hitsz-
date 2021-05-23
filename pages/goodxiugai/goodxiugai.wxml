@@ -1,0 +1,37 @@
+<!--pages/goodxiugai/goodxiugai.wxml-->
+<view>
+  <textarea class="inpution1" placeholder="{{name}}" bindinput="gaininformation1"></textarea>
+</view>
+
+<view>
+  <textarea class="inpution" placeholder="{{description}}" bindinput="gaininformation2"></textarea>
+</view>
+
+<view>
+  <textarea class="inpution" placeholder="{{conversation}}" bindinput="gaininformation3"></textarea>
+</view>
+
+<view class="ttsss">
+    是否是特殊物品
+  <switch style='zoom:0.8;' bindchange="shifou"></switch>
+</view>
+
+<view class="tishi">
+    <text class="chongxing">图片需要重新上传</text>
+</view>
+
+<view class="fong">
+  <button bindtap="handleChooseImg" class="dia">+</button>
+  <view wx:for="{{scimg}}"
+  wx:key="*this"
+  bindtap="delete"
+  data-index="{{index}}">
+  <photo src="{{item}}"
+  data-index="{{index}}"
+  bindtap="delete"
+  class="photogeshi">
+  </photo>
+  </view>
+</view>
+
+<button type="warn" class="tijiao" bindtap="tijiao">提交</button>

@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "photo":"../../componments/photo/photo"
+  },
+  "navigationBarTitleText": "已上传的物品"
 }

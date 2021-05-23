@@ -1,0 +1,15 @@
+<view class="search_row">
+    <view class="zhongdian">我反馈的意见</view>
+    <button class="search_row_button" bindtap="switch">管理</button>
+  </view>
+<view wx:for="{{shiju.data}}" wx:key="_id">
+  <view>
+    <view>具体描述：{{item.textvar}}</view>
+    <view wx:if="{{item.fankui}}">已处理：{{item.huifu}}</view>
+    <view wx:else>未被处理</view>
+    <button wx:if="{{guanli==true}}" bindtap="shanchu" data-_id="{{item._id}}" class="ddddemo">删除</button>
+  </view>
+</view>
+<button bindtap="reach"  type="warn" plain="ture" class="anniu">
+    提意见
+</button>        

@@ -1,0 +1,32 @@
+<view>
+  <textarea class="inpution1" placeholder="请输入物品的名称" bindinput="gaininformation1"></textarea>
+</view>
+
+<view>
+  <textarea class="inpution" placeholder="请输入物品的相关描述" bindinput="gaininformation2"></textarea>
+</view>
+
+<view>
+  <textarea class="inpution" placeholder="请输入失物的放置地点或者您的联系方式" bindinput="gaininformation3"></textarea>
+</view>
+
+<view>
+    是否是特殊物品
+  <switch style='zoom:0.8;' bindchange="shifou"></switch>
+</view>
+
+<view class="fong">
+  <button bindtap="handleChooseImg" class="dia">+</button>
+  <view wx:for="{{scimg}}"
+  wx:key="*this"
+  bindtap="delete"
+  data-index="{{index}}">
+  <photo src="{{item}}"
+  data-index="{{index}}"
+  bindtap="delete"
+  class="photogeshi">
+  </photo>
+  </view>
+</view>
+
+<button type="warn" class="tijiao" bindtap="tijiao">提交</button>

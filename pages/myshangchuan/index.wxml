@@ -1,2 +1,37 @@
-<!--pages/myshangchuan/index.wxml-->
-<text>pages/myshangchuan/index.wxml</text>
+<view wx:if="{{guanli==false}}">
+  <view class="search_row">
+    <view class="zhongdian">我的上传物品信息</view>
+    <button class="search_row_button" bindtap="switch" plain="true" type="primary">管理</button>
+  </view>
+  <view wx:for="{{scshiju.data}}" wx:key="_id" wx:for-item="itt">
+    <navigator url="/pages/mygood2/mygood2?_id={{itt._id}}&lingqu={{itt.lingqu}}&conversation={{itt.conversation}}&description={{itt.description}}&name={{itt.name}}" bindtap="chuandi" data-itt="{{itt}}">
+      <view>物品名称：{{itt.name}}</view>
+      <view>物品描述：{{itt.description}}</view>
+      <view> 领取方式或联系方式：{{itt.conversation}}</view>
+      <view wx:if="{{itt.lingqu}}">已被领取</view>
+      <view wx:else>未被领取</view>
+    </navigator>
+  </view>
+  <button class="tianjia" type="warn" plain="ture" bindtap="goto">
+  上传
+</button>
+</view>
+<view wx:else>
+  <view class="search_row">
+    <view class="zhongdian">我的上传物品信息</view>
+    <button class="search_row_button" bindtap="switch" type="primary" plain="true">管理</button>
+  </view>
+  <view wx:for="{{scshiju.data}}" wx:key="_id">
+    <view>
+      <view>物品名称：{{item.name}}</view>
+      <view>物品描述：{{item.description}}</view>
+      <view> 领取方式或联系方式：{{item.conversation}}</view>
+      <view wx:if="{{item.lingqu}}">已被领取</view>
+      <view wx:else>未被领取
+      <view>
+        <button bindtap="shanchu" data-_id="{{item._id}}" size="mini" type="warn" class="ddddemo">删除</button>
+      </view>
+      </view>
+    </view>
+  </view>
+</view>

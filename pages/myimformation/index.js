@@ -5,14 +5,49 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    id:'',
+    xuehao:'',
+    beizhu:'',
+    userInfo:[],
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
-
+  onLoad: function () {
+    const a=this;
+    const db=wx.cloud.database();
+    wx.getStorage({
+      key:"userInfo",
+      success(res){
+        a.setData({
+          userInfo:res.data
+        })
+        wx.getStorage({
+          key:'openid',
+          success(res1){
+            db.collection('information').where({
+              _openid:res1.data
+            }).get({
+              success:function(res2){
+                console.log(res2);
+                a.setData({
+                  id:res2.data[0].id,
+                  beizhu:res2.data[0].beizhu,
+                  xuehao:res2.data[0].xuehao
+                })
+              }
+            })
+          }
+        })
+      },
+      fail(res){
+        wx.showToast({
+          title: '请先前往“我的”登录',
+          mask:true
+        })
+      }
+    })
   },
 
   /**
@@ -62,5 +97,11 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+
+  xiugai(){
+    wx.redirectTo({
+      url: '../xiugai/xiugai',
+    })
   }
 })

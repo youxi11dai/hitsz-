@@ -1,2 +1,14 @@
-<!--pages/myimformation/index.wxml-->
-<text>pages/myimformation/index.wxml</text>
+<view>
+  用户信息
+</view>
+<view>
+用户名:{{id}}
+</view>
+<view>
+学号:{{xuehao}}
+</view>
+<view>
+备注:{{beizhu}}
+</view>
+
+<button bindtap="xiugai">修改</button>

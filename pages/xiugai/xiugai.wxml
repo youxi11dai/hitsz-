@@ -1,0 +1,4 @@
+<input placeholder="请输入姓名" bindinput="idinput">{{id}}</input>
+<input placeholder="请输入学号" bindinput="xuehaoinput" >{{xuehao}}</input>
+<input placeholder="请输入备注" bindinput="beizhuinput">{{beizhu}}</input>
+<button bindtap="tijiao">提交</button>
